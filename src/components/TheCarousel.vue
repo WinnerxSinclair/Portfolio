@@ -40,6 +40,8 @@ const prevImg = () => {
 .car{
   overflow:hidden;
   position:relative;
+  width:clamp(350px, 100%, 60rem);
+  aspect-ratio: 16/9;
 }
 .arrow {
   width: 50px;
@@ -67,12 +69,12 @@ const prevImg = () => {
   
 }
 .slide {
-  min-width: 100%;
+  min-width:100%;
 }
 .slide > img {
-  width: 100%;
-  object-fit: cover;
-  display:block;
-  min-height:100%;
+  width:100%;
+  height:100%;
+  object-fit: fill;
+  max-height:600px;
 }
 </style>

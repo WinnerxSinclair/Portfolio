@@ -24,12 +24,12 @@
   --cool-font: 'Jacques Francois';
   --header-height: 4rem;
 
-  --fs-100: clamp(.8rem, calc(.8rem + 1vmin), 1rem);
-  --fs-200: clamp(1rem, calc(1rem + 1vmin), 1.2rem);
-  --fs-300: clamp(1.2rem, calc(1.2rem + 1vmin), 1.4rem);
-  --fs-400: clamp(1.4rem, calc(1.4rem + 1vmin), 1.6rem);
-  --fs-500: clamp(1.6rem, calc(1.6rem + 1vmin), 1.8rem);
-  --fs-600: clamp(1.8rem, calc(1.8rem + 1vmin), 2rem);
+  --fs-100: clamp(.8rem, calc(.8rem + 1vmin), 1.2rem);
+  --fs-200: clamp(1rem, calc(1rem + 1vw), 1.4rem);
+  --fs-300: clamp(1.2rem, calc(1.2rem + 1vw), 1.4rem);
+  --fs-400: clamp(1.4rem, calc(1.4rem + 1vw), 1.6rem);
+  --fs-500: clamp(1.6rem, calc(1.6rem + 1vw), 1.8rem);
+  --fs-600: clamp(1.8rem, calc(1.8rem + 1vw), 2rem);
 
   --ff-1: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   --ff-2: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -99,8 +99,10 @@ html {
   }
   body{
     line-height: inherit;
-    max-width:2200px;
-    color:white;
+    max-width: 1536px;
+    margin-left:auto;
+    margin-right:auto;
+    color:black;
    
 }
 
@@ -233,6 +235,12 @@ h2 {
 .whiteBlur,
 .whiteBlurHov:hover{
   text-shadow: 0 0 5px rgb(255, 255, 255), 0 0 12px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255), 0 0 30px rgb(255, 255, 255);
+}
+.blackBlur,
+.blackBlur:hover{
+  
+  background:rgb(240, 240, 240);
+  border-radius:.5rem;
 }
 
 .pink-blur:hover{
