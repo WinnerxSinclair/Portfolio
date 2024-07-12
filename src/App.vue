@@ -2,7 +2,8 @@
 import {ref,computed} from 'vue'
 import TheCarousel from './components/TheCarousel.vue'
 import { frog, gg, gg_home, gg_event, gg_table, 
-gr_home, gr_collection, gr_recipe, gr_signup, test_gif, pool, portrait, NineBall } from './assets';
+gr_home, gr_collection, gr_recipe, gr_signup, test_gif, pool, portrait, 
+NineBall, sf_home, sf_game, s_logo } from './assets';
 
 
 
@@ -32,7 +33,7 @@ const projects = ref([
     name: 'Good Game',
     logo: gg,
     repoLink: 'https://github.com/StanPham/Good-Game-App',
-    demoLink: 'https://good-game-dev-environment.web.app/',
+    demoLink: 'https://goodgame-testdev.web.app/',
     home: gg_home,
     s_desc: `Full stack collaboration webdev project for a local business using Vue+Firebase.`,
     items: [
@@ -115,7 +116,38 @@ const projects = ref([
       },
       
     ]
-  },
+   },
+   {
+      name: 'Spyfall Clone',
+      logo: s_logo,
+      repoLink: 'https://github.com/WinnerxSinclair/spygame',
+      demoLink: 'https://spyfall.win/',
+      home: sf_home,
+      s_desc: `Multiplayer web game that features real time updates between clients and the server.`,
+      items: [
+        { title: "Lobby Creation", pic: sf_home},
+        { title: "Game State", pic: sf_game},
+        
+      ],
+      info: [
+        {
+          heading: 'Overview',
+          content: `Clone of the multiplayer web game Spyfall, created from scratch. The app features
+          real time communication between clients and server using Socket.io. Most spyfall games on the web
+          have a small number of locations, making the game stale quickly. My implementation fixes this by having
+          a large number of locations.`
+        },
+        {
+          heading: 'Technologies Used',
+          content: 'Vue, JavaScript, CSS, HTML, Socket.io, Express'
+        },
+        {
+          heading: 'New Challenges',
+          content: 'Implementing real time connection between server and clients using Socket.io'
+        }
+        
+      ]
+   }
 ])
 
 const carOrAbout = ref(true);

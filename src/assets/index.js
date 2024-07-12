@@ -17,3 +17,7 @@ export { default as test_gif } from './testgif.gif'
 export { default as portrait } from './portrait.gif'
 export { default as pool } from './pool.gif'
 export { default as NineBall } from './9ball.png'
+
+export { default as sf_home } from './sf_home.gif'
+export { default as sf_game } from './sf_game.gif'
+export { default as s_logo } from './s.svg'
